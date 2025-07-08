@@ -17,17 +17,17 @@ public:
     void Display();
 };
 
-Upper_Matrix::Upper_Matrix() {
+Upper_Matrix::Upper_Matrix() { // defalut constructor
     n = 5;
     A = new int[15]();
 }
 
-Upper_Matrix::Upper_Matrix(int n) {
+Upper_Matrix::Upper_Matrix(int n) { // parapeterized constructor
     this->n = n;
     A = new int[n*(n+1)/2]();
 }
 
-Upper_Matrix::~Upper_Matrix() {
+Upper_Matrix::~Upper_Matrix() { //distructor
     delete[] A;
 }
 
